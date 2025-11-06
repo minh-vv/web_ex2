@@ -1,0 +1,112 @@
+/* Result Table Component Styles */
+.result-table {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.result-table-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.result-table-header .icon {
+  font-size: 22px;
+  color: #2196F3;
+}
+
+.result-table h3 {
+  margin: 0;
+  color: #333;
+  font-size: 20px;
+}
+
+/* Search Info - Compact */
+.search-info {
+  padding: 10px 15px;
+  background-color: #e3f2fd;
+  border-left: 4px solid #2196F3;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.text-muted {
+  color: #999;
+  font-style: italic;
+}
+
+.result-count {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+/* Loading State */
+.loading-container {
+  text-align: center;
+  padding: 40px 20px;
+  color: #666;
+}
+
+.loading-icon {
+  font-size: 32px;
+  color: #2196F3;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-icon {
+  animation: spin 1s linear infinite;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+}
+
+.empty-icon {
+  font-size: 48px;
+  color: #f44336;
+  margin-bottom: 15px;
+}
+
+/* Table Styles */
+.result-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.result-table th {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  background-color: #2196F3;
+  color: white;
+  font-weight: 600;
+}
+
+.result-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.result-table tbody tr:hover {
+  background-color: #e3f2fd !important;
+  transition: background-color 0.2s ease;
+}
+
